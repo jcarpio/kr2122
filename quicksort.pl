@@ -6,8 +6,29 @@ quicksort(+List, -R)
 
 */
 
+quicksort([], []).
 
-quicksort([Pivot|Tail],  ):-
+quicksort([Pivot|Tail], R):-
   split_list(Pivot, Tail, Small, High),
   quicksort(Small, RS),
   quicksort(High, RH),
+  append(RS, [Pivot|RH], R).
+  
+/*
+ split_list(+Pivot, +List, -Small, -High)
+   is is true if Small unify a list with the values of
+   List that are less or equal than Pivot and
+   High unify with a list with the values that are
+   higher than Pivot.   
+*/  
+
+split_list(_, [], [], []).
+
+split_list(Pivot, [Head|Tail], [Head|Small], High):-
+  Head =< Pivot,
+  split_list(Pivot, Tail, Small, High).
+  
+  
+split_list(Pivot, [Head|Tail], Small, [Head|High]):-
+  Head > Pivot,
+  split_list(Pivot, Tail, Small, High).
