@@ -1,3 +1,12 @@
+
+:- load_files('generate_list.pl').
+% :- set_prolog_flag(stack_limit, 8_589_934_592).
+% :- set_prolog_flag(stack_limit, 17_179_869_184).
+% :- set_prolog_flag(stack_limit, 34_359_738_368).
+:- set_prolog_flag(stack_limit, 68_719_476_736).
+
+
+
 /*
 
 quicksort(+List, -R)
@@ -25,11 +34,11 @@ quicksort([Pivot|Tail], R):-
 split_list(_, [], [], []).
 
 split_list(Pivot, [Head|Tail], [Head|Small], High):-
-  Head =< Pivot, % it is very important to put this line before recursion, 
-                 % otherwise the program didn't finish
+  Head =< Pivot,
   split_list(Pivot, Tail, Small, High).
   
   
 split_list(Pivot, [Head|Tail], Small, [Head|High]):-
   Head > Pivot,
   split_list(Pivot, Tail, Small, High).
+    
