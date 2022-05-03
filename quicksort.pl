@@ -25,7 +25,8 @@ quicksort([Pivot|Tail], R):-
 split_list(_, [], [], []).
 
 split_list(Pivot, [Head|Tail], [Head|Small], High):-
-  Head =< Pivot,
+  Head =< Pivot, % it is very important to put this line before recursion, 
+                 % otherwise the program didn't finish
   split_list(Pivot, Tail, Small, High).
   
   
