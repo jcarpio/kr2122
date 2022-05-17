@@ -11,6 +11,8 @@ sudoku(+Matrix)
 % International sudoku competition
 % https://logicmastersindia.com/SM/2022sm.asp
 
+% https://www.sudoku.org.uk/Daily.asp
+
 sudoku(Matrix):- 
   length(Matrix, 9),
   maplist(same_length(Matrix), Matrix),
