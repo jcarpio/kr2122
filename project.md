@@ -2,7 +2,7 @@
 # Course 2021-2022
 ### Document version: 1.0.0
 
-** Important: this document may be modified during the course of the semester. Please check the latest version of it in this repository ** https://github.com/jcarpio/kr2021/edit/master/project_2021.md
+** Important: this document may be modified during the course of the semester. Please check the latest version of it in this repository ** https://github.com/jcarpio/kr2122/blob/main/project.md
 
 
 ## Project description:
