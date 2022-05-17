@@ -15,7 +15,7 @@ the originality of the work, the clarity in the explanations and the correct ope
 
 Final delivery date:
     
-### The final delivery date will be on the official date of the Knowledge Representation exam. On this second date, the final documents of the theoretical part and the practical part must be delivered.
+### The final delivery date will be on the official date of the Knowledge Representation exam. 
 
 ### Bibliography
 
