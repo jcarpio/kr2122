@@ -1,4 +1,11 @@
 
+/*
+
+https://sudokuspoiler.com
+https://www.sudoku.org.uk/Competitions.asp
+
+*/
+
 :- use_module(library(clpfd)).
 
 /*
